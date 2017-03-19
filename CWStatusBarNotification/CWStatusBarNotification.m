@@ -276,7 +276,7 @@ static void cancel_delayed_block(CWDelayedBlockHandle delayedHandle)
         case CWNotificationStyleStatusBarNotification:
             return [self getStatusBarHeight];
         case CWNotificationStyleNavigationBarNotification:
-            return [self getStatusBarHeight] + [self getNavigationBarHeight];
+            return 70;
         default:
             return [self getStatusBarHeight];
     }
